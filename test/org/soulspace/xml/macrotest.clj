@@ -1,7 +1,8 @@
 (ns org.soulspace.xml.macrotest
-  (:use [org.soulspace.xml marshalling zip])
   (:require [clojure.zip :as zip]
-            [clojure.data.xml :as xml]))
+            [clojure.data.xml :as xml]
+            [org.soulspace.xml.marshalling :as xm]
+            [org.soulspace.xml.zip :as xzip]))
 
 (defmacro metatest [v]
   (doseq [entry v]
@@ -68,23 +69,23 @@
   [
    ^:root
    ^{:ns "http://eclipse.org/classpath"}
-   {:element Classpath
+   {:element "Classpath"
     :content
     [^:optional
      ^:many
-     Classpathentry]}
+     "Classpathentry"]}
 
-   {:element Classpathentry
+   {:element "Classpathentry"
     :attributes ["kind" "path"]
     :content
     [^:optional
-     Attributes]}
+     "Attributes"]}
 
-   {:element Attributes
+   {:element "Attributes"
     :content
     [^:optional
      ^:many
-     Attribute]}
+     "Attribute"]}
 
-   {:element Attribute
+   {:element "Attribute"
     :attributes ["name" "value"]}])
