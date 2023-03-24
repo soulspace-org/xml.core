@@ -1,6 +1,6 @@
-(defproject org.soulspace.clj/xml.core "0.5.0"
+(defproject org.soulspace.clj/xml.core "0.5.1"
   :description "The xml.core library contains code to work with XML in Clojure."
-  :url "https://github.com/lsolbach/CljXML"
+  :url "https://github.com/soulspace-org/xml.core"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
 

@@ -8,8 +8,7 @@
 ;   You must not remove this notice, or any other, from this software.
 ;
 (ns org.soulspace.xml.util
-  (:require [clojure.data.xml :as xml]
-            [clojure.java.io :as io])
+  (:require [clojure.data.xml :as xml])
   (:import [org.xml.sax InputSource]))
 
 (def invalid-chars

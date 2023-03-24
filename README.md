@@ -1,15 +1,15 @@
 xml.core
 ========
-The xml.core library contains code to work with XML in Clojure.
+The xml.core library contains some functions to work with XML in Clojure.
 
 Usage
 -----
-Leiningen
-[org.soulspace.clj/xml.core "0.5.0"]
+### Dependency
+[![Clojars Project](https://img.shields.io/clojars/v/org.soulspace.clj/tools.repository.svg)](https://clojars.org/org.soulspace.clj/tools.repository)
 
 Copyright
 ---------
-© 2011-2020 Ludger Solbach
+© 2011-2023 Ludger Solbach
 
 License
 -------

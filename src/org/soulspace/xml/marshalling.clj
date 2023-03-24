@@ -13,7 +13,6 @@
   "Protocol for XML marshalling."
   (to-xml [this] "Produces xml as clojure.data.xml/Element structure that can be emitted with the fns from the clojure.data.xml namespace."))
 
-
 (defprotocol XMLUnmarshalling
   "Protocol for XML unmarshalling."
   ;? there's no element in the first place, install empty dummy usable as this in record or use a static factory function?
